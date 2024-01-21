@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository Listing</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div id="userSection" class="sticky-top">
+                <!-- User Profile Details will be dynamically added here using JavaScript -->
+            </div>
+        </div>
+        <div class="col-md-8">
+            <h2 class="text-center mb-4">GitHub Repository 🔎</h2>
+
+            <div class="form-group">
+                <label for="username">GitHub Username:</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter GitHub Username">
+            </div>
+
+            <div class="form-group">
+                <label for="perPage">Repositories per Page:</label>
+                <select class="form-control" id="perPage">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select>
+            </div>
+
+            <button class="btn btn-dark border-0 " onclick="getRepositories()" style="background-color: rgb(25, 116, 25);">Get Repositories</button>
+
+            <div id="loader" class="mt-4 d-none">
+                <img class ="loader-gif" src="https://i.gifer.com/origin/b4/b4d657e7ef262b88eb5f7ac021edda87.gif" alt="Loading...">
+            </div>
+
+            <div id="repositories" class="mt-4"></div>
+
+            <div>
+                <ul class="pagination justify-content-center mt-4" id="pagination"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

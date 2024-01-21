@@ -1,0 +1,57 @@
+body{
+    background-color: #17191c;
+    color: #f3f3f3;
+}
+
+.form-control,.form-control:focus{
+    background-color: #24292e;
+    border: 1px solid #24292e;
+    color: #f3f3f3;
+}
+
+.card {
+    margin-bottom: 20px;
+    width: 350px;
+    background-color: #24292e;
+    border-radius: 8px;
+}
+
+#loader {
+    text-align: center;
+
+}
+
+.loader-gif{
+    width: 100px;
+    height: 100px;
+}
+
+#repositories {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.pagination {
+    cursor: pointer;
+
+}
+
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+}
+
+.languages{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.tag{
+    background-color: #ff2d60;
+}
