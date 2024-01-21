@@ -2,6 +2,9 @@
 
 This web application allows users to explore public GitHub repositories for a specific user.
 
+![image](https://github.com/vshnn/GitHub-Repository-Listing/assets/96879195/81ccd880-fa48-4c64-a675-fa829f9f8b14)
+
+
 ## Technologies Used
 
 - HTML
